@@ -14,11 +14,11 @@ public class Member {
         this.id = id;
     }
 
-    public String getName() {
+    public String getName() { // 꺼낼 때
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) { // 넣을 때
         this.name = name;
     }
 }
