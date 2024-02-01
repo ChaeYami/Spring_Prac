@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.*;
 import hello.hellospring.service.MemberService;
 import jakarta.persistence.EntityManager;
@@ -40,12 +41,9 @@ public class SpringConfig {
     public MemberService memberService(){
 //        return new MemberService(memberRepository());
         return new MemberService(memberRepository);
-
     }
 
-
 /*
-
     @Bean
     public MemberRepository memberRepository(){ //인터페이스
 //        return new MemoryMemberRepository(); //구현체
@@ -58,8 +56,9 @@ public class SpringConfig {
 
 //        return new JdbcTemplateMemberRepository(dataSource); // jdbc template
 //        return new JpaMemberRepository(em); //jpa
-
     }
 */
+
 }
+
 
